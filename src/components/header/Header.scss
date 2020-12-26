@@ -1,4 +1,5 @@
 @import "./../../scss/styles.scss";
+
 header {
   background: $primary-color;
   @include flexSpaceBetween;
@@ -18,13 +19,6 @@ header {
     &--last {
       color: $colorRed;
       font-weight: 600;
-    }
-  }
-
-  .menu {
-    @include flexSpaceBetween;
-    &__nav {
-      margin: 0 1rem;
     }
   }
 }

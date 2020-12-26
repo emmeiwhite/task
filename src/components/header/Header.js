@@ -1,4 +1,6 @@
 import React from "react";
+import Menus from "../menus/Menus";
+
 import "./Header.scss";
 
 export default function Header() {
@@ -9,36 +11,7 @@ export default function Header() {
           Company <span className="nav__brand--last">LOGO</span>
         </div>
 
-        <ul className="menu">
-          <li className="menu__nav active">
-            <a href="index.html" className="menu__nav__link">
-              About
-            </a>
-          </li>
-
-          <li className="menu__nav">
-            <a href="about.html" className="menu__nav__link">
-              Services
-            </a>
-          </li>
-
-          <li className="menu__nav">
-            <a href="projects.html" className="menu__nav__link">
-              Solutions
-            </a>
-          </li>
-
-          <li className="menu__nav">
-            <a href="contact.html" className="menu__nav__link">
-              Blog
-            </a>
-          </li>
-          <li className="menu__nav">
-            <a href="contact.html" className="menu__nav__link">
-              Get In Touch
-            </a>
-          </li>
-        </ul>
+        <Menus />
       </nav>
     </header>
   );
