@@ -1,0 +1,29 @@
+@import "./../../scss/styles.scss";
+
+.solutions {
+  background: $colorWhite;
+  &__description {
+    @include gridLayout(2, 1, 2rem);
+
+    .solutions__description--heading {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      font-weight: 500;
+      font-size: 28px;
+      letter-spacing: 1.5px;
+      line-height: 1.25;
+    }
+
+    .solutions__description--text {
+      line-height: 1.4;
+      font-weight: 0;
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
