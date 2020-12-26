@@ -1,0 +1,25 @@
+@import "./../../scss/styles.scss";
+header {
+  background: $primary-color;
+  @include flexSpaceBetween;
+  height: $headerHeight;
+}
+
+.nav {
+  @include flexSpaceBetween;
+  &__brand {
+    color: $colorWhite;
+    text-transform: $upperCase;
+    &--last {
+      color: $colorRed;
+      font-weight: 600;
+    }
+  }
+
+  .menu {
+    @include flexSpaceBetween;
+    &__nav {
+      margin: 0 1rem;
+    }
+  }
+}
