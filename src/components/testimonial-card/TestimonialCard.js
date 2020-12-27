@@ -7,11 +7,15 @@ export default function TestimonialCard({
   position,
   org,
   img,
+  blockQuote,
 }) {
   return (
     <div className="testimony">
       <div className="testimony__card">
-        <p>{text}</p>
+        <p>
+          {blockQuote}
+          {text}
+        </p>
       </div>
 
       <div className="testimony__user">

@@ -1,0 +1,18 @@
+@import "./../../scss/styles.scss";
+
+footer {
+  background-color: $primary-color;
+}
+.footer {
+  height: 100px;
+
+  @include flexSpaceBetween;
+  color: $colorGray;
+  &__social {
+    @include flexCenter(row);
+    li {
+      margin: 0 5px;
+      font-size: 1.3rem;
+    }
+  }
+}

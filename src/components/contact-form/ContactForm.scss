@@ -10,6 +10,9 @@
     min-height: 320px;
     color: $colorWhite;
     text-align: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
     .input-wrapper {
       @include gridLayout(3, 1, 1rem);
       margin-top: 2rem;
