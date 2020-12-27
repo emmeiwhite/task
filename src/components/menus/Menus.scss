@@ -5,7 +5,7 @@
   &__nav {
     margin: 0 1rem;
     &.active {
-      &--link {
+      a {
         color: $colorWhite;
       }
     }
@@ -25,5 +25,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
   }
 }

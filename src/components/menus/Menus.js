@@ -24,7 +24,7 @@ export default function Menus() {
                   <span>{text}</span>
                 </span>
               ) : (
-                <span>{text}</span>
+                <span class>{text}</span>
               )}
             </a>
           </li>

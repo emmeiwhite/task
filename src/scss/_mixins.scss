@@ -1,7 +1,7 @@
-@mixin sectionAlignment() {
+@mixin sectionAlignment($maxWidth, $width) {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
+  max-width: $maxWidth;
+  width: $width;
 }
 
 @mixin flexCenter($direction) {
@@ -22,4 +22,12 @@
   grid-template-columns: repeat($columns, 1fr);
   grid-template-rows: repeat($rows, 1fr);
   column-gap: $gap;
+}
+
+// Desktop-First Design Followed
+
+@mixin mobileScreen {
+  @media (max-width: $mobile) {
+    @content;
+  }
 }

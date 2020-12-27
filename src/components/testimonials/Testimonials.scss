@@ -12,3 +12,18 @@
     margin-top: 1.5rem;
   }
 }
+
+@include mobileScreen {
+  .testimonials {
+    &__wrapper {
+      @include gridLayout(1, 1, 0);
+    }
+
+    .testimony {
+      display: none;
+      &:first-child {
+        display: block;
+      }
+    }
+  }
+}

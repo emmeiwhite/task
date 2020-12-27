@@ -13,12 +13,24 @@ header {
 
 .nav {
   @include flexSpaceBetween;
+  &__icon {
+    display: none;
+  }
   &__brand {
     color: $colorWhite;
     text-transform: $upperCase;
     &--last {
       color: $colorRed;
       font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    &__icon {
+      display: block;
+      color: $colorWhite;
     }
   }
 }

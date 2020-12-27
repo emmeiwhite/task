@@ -4,9 +4,17 @@
 
 // CSS Uitlility Class
 .section {
-  @include sectionAlignment;
+  @include sectionAlignment(1200px, 100%);
 }
 
 .row {
   padding: 5rem 0;
+}
+
+// DESKTOP FIRST APPROACH
+
+@include mobileScreen {
+  .section {
+    @include sectionAlignment(768px, 95%);
+  }
 }

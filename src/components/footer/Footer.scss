@@ -16,3 +16,12 @@ footer {
     }
   }
 }
+
+@include mobileScreen {
+  .footer {
+    @include flexCenter(column);
+    &__social {
+      margin: 1rem 0;
+    }
+  }
+}

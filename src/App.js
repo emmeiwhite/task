@@ -6,6 +6,7 @@ import Solutions from "./components/solutions/Solutions";
 import Testimonials from "./components/testimonials/Testimonials";
 import ContactForm from "./components/contact-form/ContactForm";
 import Footer from "./components/footer/Footer";
+
 function App() {
   return (
     <div className="App">
